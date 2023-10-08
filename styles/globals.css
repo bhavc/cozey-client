@@ -2,4 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './fonts.css'
+@import url("./fonts.css");

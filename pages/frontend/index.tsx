@@ -72,7 +72,7 @@ export default function Frontend({
 	return (
 		<main className="">
 			<div className="">
-				<h1>Tables</h1>
+				<h1 className="font-CamptonThin">Tables</h1>
 				<h2>A perfect pairing to your sofa.</h2>
 			</div>
 			{/* TODO this should link to a sub section */}
@@ -95,7 +95,7 @@ export default function Frontend({
 				</div>
 			</nav>
 			<div className="">
-				<h1>Coffee Tables</h1>
+				<h1 className="font-Campton-BookItalic">Coffee Tables</h1>
 				<div className="grid grid-cols-3 gap-3">
 					{coffeeTableProducts.map((coffeeTableProduct, index) => {
 						const { name, price, color, imageUrl } = coffeeTableProduct;
