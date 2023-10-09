@@ -71,32 +71,47 @@ export default function Frontend({
 
 	return (
 		<main className="">
-			<div className="">
-				<h1 className="font-CamptonThin">Tables</h1>
-				<h2>A perfect pairing to your sofa.</h2>
+			<div className="py-4 px-20">
+				<h1 className="font-CamptonExtraLight text-[#2B2C6E] text-5xl">
+					Tables
+				</h1>
+				<h2 className="font-CamptonLight text-[#19142B] text-lg">
+					A perfect pairing to your sofa.
+				</h2>
 			</div>
 			{/* TODO this should link to a sub section */}
-			<nav className="bg-blue-400 border-gray-200 ">
-				<div className="">
-					<ul className="flex flex-row">
-						<li>
-							<Link href="something">Coffee Tables</Link>
-						</li>
-						<li>
-							<Link href="something">Side Tables</Link>
-						</li>
-						<li>
-							<Link href="something">Media Units</Link>
-						</li>
-						<li>
-							<Link href="something">Table Sets</Link>
-						</li>
-					</ul>
+			<div className="bg-[#0B2341] px-20 py-4 h-[60px] sticky top-[40px] z-50">
+				<div className="flex justify-between">
+					<div>
+						<Link className="text-[#F7F8F6]" href="something">
+							Coffee Tables
+						</Link>
+					</div>
+					<div>
+						<Link className="text-[#F7F8F6]" href="something">
+							Side Tables
+						</Link>
+					</div>
+					<div>
+						<Link className="text-[#F7F8F6]" href="something">
+							Media Units
+						</Link>
+					</div>
+					<div>
+						<Link className="text-[#F7F8F6]" href="something">
+							Table Sets
+						</Link>
+					</div>
 				</div>
-			</nav>
+			</div>
+
 			<div className="">
-				<h1 className="font-Campton-BookItalic">Coffee Tables</h1>
-				<div className="grid grid-cols-3 gap-3">
+				<div className="my-0 mx-auto px-20 pt-8 pb-0">
+					<h1 className="font-QuincyRegular text-center text-[32px]">
+						Coffee Tables
+					</h1>
+				</div>
+				<div className="py-4 px-6 grid grid-cols-3 relative content-center gap-10">
 					{coffeeTableProducts.map((coffeeTableProduct, index) => {
 						const { name, price, color, imageUrl } = coffeeTableProduct;
 						return (

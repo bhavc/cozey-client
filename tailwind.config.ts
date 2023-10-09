@@ -45,6 +45,8 @@ const config: Config = {
 			QuincyTextItalic: ["Quincy-TextItalic"],
 			QuincyMedium: ["Quincy-Medium"],
 			QuincyMediumItalic: ["Quincy-MediumItalic"],
+			QuincyRegular: ["Quincy-Regular"],
+			QuincyRegularItalic: ["Quincy-RegularItalic"],
 			QuincyBold: ["Quincy-Bold"],
 			QuincyBoldItalic: ["Quincy-BoldItalic"],
 			QuincyExtraBold: ["Quincy-ExtraBold"],

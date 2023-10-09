@@ -127,7 +127,7 @@
 }
 
 @font-face {
-    font-family: "Larsseit-MediumItalic";
+    font-family: "Larsseit-ThinItalic";
     src: url('/client/public/fonts/Larsseit/Larsseit-ThinItalic.otf');
     weight: 100
 }
@@ -246,18 +246,18 @@
     font-style: italic;
 }
 
-/* @font-face {
-    font-family: "Campton-SemiBold";
-    src: url('/client/public/fonts/Campton/Campton-SemiBold.otf');
+@font-face {
+    font-family: "Quincy-Regular";
+    src: url('/client/public/fonts/Quincy/quincycf-regular.otf');
     font-weight: 600;
 }
 
 @font-face {
-    font-family: "Campton-SemiBoldItalic";
-    src: url('/client/public/fonts/Campton/Campton-SemiBoldItalic.otf');
+    font-family: "Quincy-RegularItalic";
+    src: url('/client/public/fonts/Quincy/quincycf-regularitalic.otf');
     font-weight: 600;
     font-style: italic;
-} */
+} 
 
 @font-face {
     font-family: "Quincy-Bold";
