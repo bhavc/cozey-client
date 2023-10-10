@@ -183,91 +183,91 @@
 
 /* Quincy */
 @font-face {
-    font-family: "Quincy-Thin";
+    font-family: "Quincy";
     src: url("../public/fonts/Quincy/quincycf-thin.otf");
     font-weight: 100;
 }
 
 @font-face {
-    font-family: "Quincy-ThinItalic";
+    font-family: "Quincy";
     src: url('../public/fonts/Quincy/quincycf-thinitalic.otf');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Quincy-Light";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-light.otf');
     font-weight: 200;
 }
 
 @font-face {
-    font-family: "Quincy-LightItalic";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-lightitalic.otf');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Quincy-Text";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-text.otf');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Quincy-TextItalic";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-textitalic.otf');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Quincy-Medium";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-medium.otf');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: "Quincy-MediumItalic";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-mediumitalic.otf');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Quincy-Regular";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-regular.otf');
     font-weight: 600;
 }
 
 @font-face {
-    font-family: "Quincy-RegularItalic";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-regularitalic.otf');
     font-weight: 600;
     font-style: italic;
 } 
 
 @font-face {
-    font-family: "Quincy-Bold";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-bold.otf');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: "Quincy-BoldItalic";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-bolditalic.otf');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Quincy-ExtraBold";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-extrabold.otf');
     font-weight: 800;
 }
 
 @font-face {
-    font-family: "Quincy-ExtraBoldItalic";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-extrabolditalic.otf');
     font-weight: 800;
     font-style: italic;
@@ -275,13 +275,13 @@
 
 
 @font-face {
-    font-family: "Quincy-Black";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-black.otf');
     font-weight: 900;
 }
 
 @font-face {
-    font-family: "Quincy-BlackItalic";
+    font-family: "Quincy";
     src: url('/client/public/fonts/Quincy/quincycf-blackitalic.otf');
     font-weight: 900;
     font-style: italic;

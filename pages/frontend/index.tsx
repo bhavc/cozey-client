@@ -6,13 +6,7 @@ import Card from "@/components/Card";
 
 import type { GetServerSideProps } from "next";
 
-export default function Frontend({
-	imageFiles,
-}: {
-	imageFiles: {
-		[key: string]: string[];
-	};
-}) {
+export default function Frontend() {
 	// const { coffeeTables, mediaUnits, sideTables, tableSets } = imageFiles;
 
 	type ProductColorType = "Oak" | "Walnut" | "Black Wood" | "Espresso";
@@ -87,10 +81,8 @@ export default function Frontend({
 	return (
 		<main className="">
 			<div className="py-4 px-20">
-				<h1 className="font-CamptonExtraLight text-[#2B2C6E] text-5xl">
-					Tables
-				</h1>
-				<h2 className="font-CamptonLight text-[#19142B] text-lg">
+				<h1 className="font-Quincy text-[#2B2C6E] text-[44px]">Tables</h1>
+				<h2 className="font-larsseit text-[#19142B] text-lg">
 					A perfect pairing to your sofa.
 				</h2>
 			</div>
@@ -122,7 +114,7 @@ export default function Frontend({
 
 			<div className="">
 				<div className="my-0 mx-auto px-20 pt-8 pb-0">
-					<h1 className="font-QuincyRegular text-center text-[32px]">
+					<h1 className="font-campton text-center text-[32px]">
 						Coffee Tables
 					</h1>
 				</div>
