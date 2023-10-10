@@ -19,53 +19,68 @@ export default function Frontend({
 
 	type ProductType = {
 		name: string;
-		price: number;
-		color: ProductColorType;
+		price: string;
+		colorName: ProductColorType;
+		colorCode: string;
 		imageUrl: string;
 	};
 
 	const coffeeTableProducts: ProductType[] = [
 		{
 			name: "Stella Coffee Table - 1 Unit",
-			price: 180,
-			color: "Oak",
+			price: "$210 or financing",
+			colorName: "Oak",
+			colorCode: "bg-[#DDB586]",
 			imageUrl: "coffeeTables/Stella_Coffee_Table_1Unit",
 		},
 		{
 			name: "Stella Coffee Table - 2 Units",
-			price: 360,
-			color: "Walnut",
+			price: "$420 or financing",
+			colorName: "Walnut",
+			colorCode: "bg-[#582F11]",
 			imageUrl: "coffeeTables/Stella_Coffee_Table_2Units",
 		},
 		{
 			name: "Pluto Coffee Table",
-			price: 115,
-			color: "Black Wood",
+			price: "$135 or financing",
+			colorName: "Black Wood",
+			colorCode: "bg-[#0A0401]",
 			imageUrl: "coffeeTables/Pluto_Coffee_Table",
 		},
 		{
 			name: "Stella Coffee Table - 3 Units",
-			price: 540,
-			color: "Oak",
+			price: "$630 or financing",
+			colorName: "Oak",
+			colorCode: "bg-[#DDB586]",
 			imageUrl: "coffeeTables/Stella_Coffee_Table_3Units",
 		},
 		{
 			name: "Pluto Coffee Table",
-			price: 115,
-			color: "Espresso",
+			price: "$135 or financing",
+			colorName: "Espresso",
+			colorCode: "bg-[#442109]",
 			imageUrl: "coffeeTables/Pluto_Coffee_Table",
 		},
 		{
 			name: "Stella Coffee Table - 1 Unit",
-			price: 180,
-			color: "Walnut",
+			price: "$210 or financing",
+			colorName: "Walnut",
+			colorCode: "bg-[#582F11]",
 			imageUrl: "coffeeTables/Stella_Coffee_Table_1Unit2",
 		},
 		{
 			name: "Stella Coffee Table - 2 Units",
-			price: 360,
-			color: "Oak",
+			price: "$420 or financing",
+			colorName: "Oak",
+			colorCode: "bg-[#DDB586]",
 			imageUrl: "coffeeTables/Stella_Coffee_Table_2Units2",
+		},
+		{
+			name: "Stella Coffee Table - 3 Units",
+			price: "$630 or financing",
+			colorName: "Oak",
+			colorCode: "bg-[#DDB586]",
+			imageUrl: "coffeeTables/Stella_Coffee_Table_3Units2",
 		},
 	];
 
@@ -113,13 +128,15 @@ export default function Frontend({
 				</div>
 				<div className="py-4 px-6 grid grid-cols-3 relative content-center gap-10">
 					{coffeeTableProducts.map((coffeeTableProduct, index) => {
-						const { name, price, color, imageUrl } = coffeeTableProduct;
+						const { name, price, colorName, colorCode, imageUrl } =
+							coffeeTableProduct;
 						return (
 							<Card
 								key={index}
 								name={name}
 								price={price}
-								color={color}
+								colorName={colorName}
+								colorCode={colorCode}
 								imageUrl={imageUrl}
 							/>
 						);

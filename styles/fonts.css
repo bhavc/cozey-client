@@ -1,103 +1,103 @@
 /* Campton */
 @font-face {
-    font-family: "Campton-Thin";
+    font-family: "Campton";
     src: url("../public/fonts/Campton/Campton-Thin.otf");
     font-weight: 100;
 }
 
 @font-face {
-    font-family: "Campton-ThinItalic";
+    font-family: "Campton";
     src: url('../public/fonts/Campton/Campton-ThinItalic.otf');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Campton-ExtraLight";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-ExtraLight.otf');
     font-weight: 200;
 }
 
 @font-face {
-    font-family: "Campton-ExtraLightItalic";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-ExtraLightItalic.otf');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Campton-Light";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-Light.otf');
     font-weight: 300;
 }
 
 @font-face {
-    font-family: "Campton-LightItalic";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-LightItalic.otf');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Campton-Book";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-Book.otf');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Campton-BookItalic";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-BookItalic.otf');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Campton-Medium";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-Medium.otf');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: "Campton-MediumItalic";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-MediumItalic.otf');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Campton-SemiBold";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-SemiBold.otf');
     font-weight: 600;
 }
 
 @font-face {
-    font-family: "Campton-SemiBoldItalic";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-SemiBoldItalic.otf');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Campton-Bold";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-Bold.otf');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: "Campton-BoldItalic";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-BoldItalic.otf');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Campton-ExtraBold";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-ExtraBold.otf');
     font-weight: 800;
 }
 
 @font-face {
-    font-family: "Campton-ExtraBoldItalic";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-ExtraBoldItalic.otf');
     font-weight: 800;
     font-style: italic;
@@ -105,13 +105,13 @@
 
 
 @font-face {
-    font-family: "Campton-Black";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-Black.otf');
     font-weight: 900;
 }
 
 @font-face {
-    font-family: "Campton-BlackItalic";
+    font-family: "Campton";
     src: url('/client/public/fonts/Campton/Campton-BlackItalic.otf');
     font-weight: 900;
     font-style: italic;
@@ -121,77 +121,65 @@
 /* Larsseit */
 
 @font-face {
-    font-family: "Larsseit-Thin";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-Thin.otf');
     weight: 100
 }
 
 @font-face {
-    font-family: "Larsseit-ThinItalic";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-ThinItalic.otf');
     weight: 100
 }
 
 @font-face {
-    font-family: "Larsseit-Light";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-Light.otf');
     weight: 300
 }
 
 @font-face {
-    font-family: "Larsseit-LightItalic";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-LightItalic.otf');
     weight: 300
 }
 
 @font-face {
-    font-family: "Larsseit-Medium";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-Medium.otf');
     weight: 500
 }
 
 @font-face {
-    font-family: "Larsseit-MediumItalic";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-MediumItalic.otf');
     weight: 500
 }
 
 
 @font-face {
-    font-family: "Larsseit-Bold";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-Bold.otf');
     weight: 700
 }
 
 @font-face {
-    font-family: "Larsseit-BoldItalic";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-BoldItalic.otf');
     weight: 700
 }
 
 @font-face {
-    font-family: "Larsseit-ExtraBold";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-ExtraBold.otf');
     weight: 800
 }
 
 @font-face {
-    font-family: "Larsseit-ExtraBoldItalic";
+    font-family: "Larsseit";
     src: url('/client/public/fonts/Larsseit/Larsseit-ExtraBoldItalic.otf');
     weight: 800
 }
-/* @font-face {
-    font-family: "Larsseit";
-    src: url('/client/public/fonts/Larsseit/Larsseit.otf');
-    
-}
-
-@font-face {
-    font-family: "Larsseit-Italic";
-    src: url('/client/public/fonts/Larsseit/Larsseit-Italic.otf');
-    
-} */
-
 
 /* Quincy */
 @font-face {
