@@ -9,6 +9,8 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@material-ui/core": "^4.12.4",
+		"@material-ui/icons": "^4.11.3",
 		"axios": "^1.5.1",
 		"fs": "^0.0.1-security",
 		"next": "13.5.4",

@@ -13,6 +13,13 @@ const config: Config = {
 			Larsseit: ["Larsseit"],
 			Quincy: ["Quincy"],
 		},
+		screens: {
+			sm: "600px",
+			md: "768px",
+			lgNav: "870px",
+			lg: "1024px",
+			xl: "1280px",
+		},
 	},
 	plugins: [require("daisyui")],
 	daisyui: {

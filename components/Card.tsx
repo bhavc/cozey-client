@@ -28,7 +28,7 @@ export default function Card({
 					/>
 				</span>
 				<div className="">
-					<div className="absolute bottom-3 right-3 z-50 flex flex-row justify-end items-center p-[6px] pl-[10px] gap-[6px] h-8 bg-white border-[0.5px] border-solid border-[#BEC8DB] rounded-full">
+					<div className="absolute bottom-3 right-3 z-40 flex flex-row justify-end items-center p-[6px] pl-[10px] gap-[6px] h-8 bg-white border-[0.5px] border-solid border-[#BEC8DB] rounded-full">
 						<div className="font-campton font-bold text-xs">{colorName}</div>
 						<div className={`rounded-full w-5 h-5 ${colorCode}`} />
 					</div>
@@ -39,9 +39,11 @@ export default function Card({
 				<div className="flex gap-2">
 					<div className="text-[#53548A] font-campton">{price}</div>
 					<div>|</div>
-					<div className="flex justify-center align-middle gap-1">
-						<div>Customize</div>
-						<div className="mt-[5px]">
+					<div className="flex justify-center align-middle gap-1 pt-1">
+						<div className="font-campton font-bold text-sm text-[#69A2FF]">
+							Customize
+						</div>
+						<div className="mt-[2px]">
 							<Image
 								src={ArrowRight}
 								alt="arrow-right.svg"

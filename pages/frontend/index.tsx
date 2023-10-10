@@ -1,13 +1,26 @@
+import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-import { getImageFiles } from "@/utils/readFileNamesForDirectory";
-
+import ChevronDown from "public/images/icons/chevronDown.svg";
+import ChevronUp from "public/images/icons/chevronUp.svg";
 import Card from "@/components/Card";
-
-import type { GetServerSideProps } from "next";
 
 export default function Frontend() {
 	// const { coffeeTables, mediaUnits, sideTables, tableSets } = imageFiles;
+	const [selectedSubHeader, setSelectedSubheader] = useState(0);
+	const [isOpen, setIsOpen] = useState(false);
+
+	function handleOnClick() {
+		setIsOpen(!isOpen);
+	}
+
+	const coffeeTableTypes = [
+		{ name: "Coffee Tables" },
+		{ name: "Side Tables" },
+		{ name: "Media Units" },
+		{ name: "Table Sets" },
+	];
 
 	type ProductColorType = "Oak" | "Walnut" | "Black Wood" | "Espresso";
 
@@ -81,33 +94,82 @@ export default function Frontend() {
 	return (
 		<main className="">
 			<div className="py-4 px-20">
-				<h1 className="font-Quincy text-[#2B2C6E] text-[44px]">Tables</h1>
+				<h1 className="font-Quincy font-light text-[#2B2C6E] text-[44px]">
+					Tables
+				</h1>
 				<h2 className="font-larsseit text-[#19142B] text-lg">
 					A perfect pairing to your sofa.
 				</h2>
 			</div>
 			{/* TODO this should link to a sub section */}
-			<div className="bg-[#0B2341] px-20 py-4 h-[60px] sticky top-[40px] z-50">
-				<div className="flex justify-between">
-					<div>
-						<Link className="text-[#F7F8F6]" href="something">
-							Coffee Tables
-						</Link>
+			<div className="sticky z-50 top-0">
+				<div
+					id="myHeader"
+					className="bg-[#0B2341] px-20 py-4 max-lgNav:py-5 max-lgNav:pr-8 max-lgNav:pl-4 h-[60px] max-lg:top-10"
+				>
+					<div className="lgNav:hidden">
+						<div className="flex justify-between">
+							<div className="text-[#F7F8F6]">
+								{coffeeTableTypes[selectedSubHeader].name}
+							</div>
+
+							<div className="">
+								<button onClick={handleOnClick}>
+									{isOpen ? (
+										<Image
+											className=""
+											src={ChevronUp}
+											alt={`chevron-up`}
+											width={25}
+											height={25}
+										/>
+									) : (
+										<Image
+											className=""
+											src={ChevronDown}
+											alt={`chevron-down`}
+											width={25}
+											height={25}
+										/>
+									)}
+								</button>
+								{isOpen && (
+									<div className="flex flex-col absolute z-10 bg-[#0B2341] w-full pt-8 pl-8 pb-4 pr-4 right-[-32px] left-0">
+										{coffeeTableTypes.map((tableType, index) => {
+											return (
+												<Link
+													key={index}
+													className="text-[#F7F8F6] pb-10"
+													href="something"
+												>
+													{tableType.name}
+												</Link>
+											);
+										})}
+									</div>
+								)}
+							</div>
+						</div>
 					</div>
-					<div>
-						<Link className="text-[#F7F8F6]" href="something">
-							Side Tables
-						</Link>
-					</div>
-					<div>
-						<Link className="text-[#F7F8F6]" href="something">
-							Media Units
-						</Link>
-					</div>
-					<div>
-						<Link className="text-[#F7F8F6]" href="something">
-							Table Sets
-						</Link>
+
+					<div className="hidden lgNav:block">
+						<div className="flex justify-between items-center">
+							<Link className="text-[#F7F8F6]" href="something">
+								Coffee Tables
+							</Link>
+
+							<Link className="text-[#F7F8F6]" href="something">
+								Side Tables
+							</Link>
+
+							<Link className="text-[#F7F8F6]" href="something">
+								Media Units
+							</Link>
+
+							<Link className="text-[#F7F8F6]" href="something">
+								Table Sets
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -139,11 +201,11 @@ export default function Frontend() {
 	);
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-	const imageFiles = getImageFiles();
-	return {
-		props: {
-			imageFiles,
-		},
-	};
-};
+// export const getServerSideProps: GetServerSideProps = async () => {
+// const imageFiles = getImageFiles();
+// return {
+// 	props: {
+// 		imageFiles,
+// 	},
+// };
+// };
