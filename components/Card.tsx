@@ -16,34 +16,44 @@ export default function Card({
 	imageUrl: string;
 }) {
 	return (
-		<div className="w-[250px] h-full flex flex-col justify-start content-evenly gap-3">
-			<div className="relative w-[400px] h-[300px]">
-				<span className="box-border block overflow-hidden rounded-3xl border-2 border-solid border-[#ECEBE7] w-[400px] h-[300px]">
+		<div className="relative flex flex-col justify-start content-evenly gap-[6px] lg:gap-3 w-auto lg:w[250px] h-auto lg:h-full">
+			<div className="relative w-full md:w-[300px] lg:w-[260px] xl:w-[400px] h-36 md">
+				<span className="box-border block overflow-hidden">
 					<Image
-						className=""
+						className="absolute inset-0 box-border p-0 m-auto rounded-xl border-2 border-solid border-[#ECEBE7]"
 						src={`/images/${imageUrl}.webp`}
 						alt={`${name}-image`}
-						width={400}
-						height={300}
+						width={186}
+						height={138}
 					/>
 				</span>
-				<div className="">
-					<div className="absolute bottom-3 right-3 z-40 flex flex-row justify-end items-center p-[6px] pl-[10px] gap-[6px] h-8 bg-white border-[0.5px] border-solid border-[#BEC8DB] rounded-full">
-						<div className="font-campton font-bold text-xs">{colorName}</div>
-						<div className={`rounded-full w-5 h-5 ${colorCode}`} />
+				<div className="absolute bottom-0 z-40 right-0 flex justify-end p-1">
+					<div className="h-5 p-1 pl-[6px] gap-1 flex flex-row items-center rounded-full cursor-pointer justify-evenly bg-white border-[0.5px]">
+						<div className="font-campton font-bold text-[#4F6076] h-2 min-[600px]:h-3 text-right items-center justify-end text-[8px] min-[600px]:text-[10px]">
+							{colorName}
+						</div>
+						<div
+							className={`rounded-full w-[12px] h-[12px] min-[600px]:w-5 min[600px]:h-5 ${colorCode}`}
+						/>
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col items-start gap-1 w-[400px]">
-				<div className="text-[#0B2341] font-campton font-semibold">{name}</div>
-				<div className="flex gap-2">
-					<div className="text-[#53548A] font-campton">{price}</div>
-					<div>|</div>
-					<div className="flex justify-center align-middle gap-1 pt-1">
-						<div className="font-campton font-bold text-sm text-[#69A2FF]">
+			<div className="relative flex flex-col items-start p-0 gap-[2px] min-[600px]:gap-1 w-full min-[600px]:w-[400px]">
+				<div className="w-[190px] md:w-[400px] text-sm md:text-base text-[#0B2341] font-campton font-semibold">
+					{name}
+				</div>
+				<div className="flex flex-row items-center justify-center min-[426px]:gap-1 max-[600px]:gap-1 md:w-[108px] md:h-[26px]">
+					<span className="text-[#53548A] font-campton text-[11px] md:text-sm whitespace-nowrap">
+						{price}
+					</span>
+					<span className="text-[#53548A] font-campton text-[11px] md:text-sm whitespace-nowrap">
+						|
+					</span>
+					<span className="relative flex justify-center cursor-pointer">
+						<div className="font-campton font-bold min-[426px]:text-[10px] max-[600px]:text-[10px] text-[11px] top-0 whitespace-nowrap text-[#69A2FF]">
 							Customize
 						</div>
-						<div className="mt-[2px]">
+						<div className="]">
 							<Image
 								src={ArrowRight}
 								alt="arrow-right.svg"
@@ -51,7 +61,7 @@ export default function Card({
 								width={16}
 							/>
 						</div>
-					</div>
+					</span>
 				</div>
 			</div>
 		</div>

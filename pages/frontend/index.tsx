@@ -16,13 +16,18 @@ export default function Frontend() {
 	}
 
 	const coffeeTableTypes = [
-		{ name: "Coffee Tables" },
-		{ name: "Side Tables" },
-		{ name: "Media Units" },
-		{ name: "Table Sets" },
+		{ name: "Coffee Tables", id: "coffeeTables" },
+		{ name: "Side Tables", id: "sideTables" },
+		{ name: "Media Units", id: "mediaUnits" },
+		{ name: "Table Sets", id: "tableSets" },
 	];
 
-	type ProductColorType = "Oak" | "Walnut" | "Black Wood" | "Espresso";
+	type ProductColorType =
+		| "Oak"
+		| "Walnut"
+		| "Black Wood"
+		| "Espresso"
+		| "Eclipse";
 
 	type ProductType = {
 		name: string;
@@ -32,6 +37,7 @@ export default function Frontend() {
 		imageUrl: string;
 	};
 
+	// assume this comes from the backend
 	const coffeeTableProducts: ProductType[] = [
 		{
 			name: "Stella Coffee Table - 1 Unit",
@@ -91,16 +97,80 @@ export default function Frontend() {
 		},
 	];
 
+	const sideTableProducts: ProductType[] = [
+		{
+			name: "Solis Adjustable Table",
+			price: "$180 or financing",
+			colorName: "Eclipse",
+			colorCode: "bg-[#1D1D1D]",
+			imageUrl: "sideTables/Solis_Adjustable_Table_Eclipse",
+		},
+		{
+			name: "Stella Coffee Table - 2 Units",
+			price: "$420 or financing",
+			colorName: "Walnut",
+			colorCode: "bg-[#582F11]",
+			imageUrl: "sideTables/Solis_Adjustable_Table_Eclipse_Twilight",
+		},
+		{
+			name: "Pluto Coffee Table",
+			price: "$135 or financing",
+			colorName: "Black Wood",
+			colorCode: "bg-[#0A0401]",
+			imageUrl: "coffeeTables/Pluto_Coffee_Table",
+		},
+		{
+			name: "Stella Coffee Table - 3 Units",
+			price: "$630 or financing",
+			colorName: "Oak",
+			colorCode: "bg-[#DDB586]",
+			imageUrl: "coffeeTables/Stella_Coffee_Table_3Units",
+		},
+		{
+			name: "Pluto Coffee Table",
+			price: "$135 or financing",
+			colorName: "Espresso",
+			colorCode: "bg-[#442109]",
+			imageUrl: "coffeeTables/Pluto_Coffee_Table",
+		},
+		{
+			name: "Stella Coffee Table - 1 Unit",
+			price: "$210 or financing",
+			colorName: "Walnut",
+			colorCode: "bg-[#582F11]",
+			imageUrl: "coffeeTables/Stella_Coffee_Table_1Unit2",
+		},
+		{
+			name: "Stella Coffee Table - 2 Units",
+			price: "$420 or financing",
+			colorName: "Oak",
+			colorCode: "bg-[#DDB586]",
+			imageUrl: "coffeeTables/Stella_Coffee_Table_2Units2",
+		},
+		{
+			name: "Stella Coffee Table - 3 Units",
+			price: "$630 or financing",
+			colorName: "Oak",
+			colorCode: "bg-[#DDB586]",
+			imageUrl: "coffeeTables/Stella_Coffee_Table_3Units2",
+		},
+	];
+
 	return (
 		<main className="">
-			<div className="py-4 px-20">
-				<h1 className="font-Quincy font-light text-[#2B2C6E] text-[44px]">
-					Tables
-				</h1>
-				<h2 className="font-larsseit text-[#19142B] text-lg">
-					A perfect pairing to your sofa.
-				</h2>
+			<div className="py-4 px-5">
+				<div className="flex flex-col p-0 justify-between">
+					<div className="flex flex-col pl-4">
+						<h1 className="font-Quincy font-normal text-[#2B2C6E] text-[44px]">
+							Tables
+						</h1>
+						<span className="font-larsseit text-[#19142B] text-lg">
+							A perfect pairing to your sofa.
+						</span>
+					</div>
+				</div>
 			</div>
+
 			{/* TODO this should link to a sub section */}
 			<div className="sticky z-50 top-0">
 				<div
@@ -109,7 +179,7 @@ export default function Frontend() {
 				>
 					<div className="lgNav:hidden">
 						<div className="flex justify-between">
-							<div className="text-[#F7F8F6]">
+							<div className="text-[#F7F8F6] pl-[18px]">
 								{coffeeTableTypes[selectedSubHeader].name}
 							</div>
 
@@ -140,7 +210,8 @@ export default function Frontend() {
 												<Link
 													key={index}
 													className="text-[#F7F8F6] pb-10"
-													href="something"
+													href={`#${tableType.id}`}
+													onClick={() => setIsOpen(false)}
 												>
 													{tableType.name}
 												</Link>
@@ -174,13 +245,13 @@ export default function Frontend() {
 				</div>
 			</div>
 
-			<div className="">
+			<div id="coffeeTables" className="">
 				<div className="my-0 mx-auto px-20 pt-8 pb-0">
-					<h1 className="font-campton text-center text-[32px]">
+					<h1 className="font-Quincy font-light text-center text-[#2B2C6E] text-[32px]">
 						Coffee Tables
 					</h1>
 				</div>
-				<div className="py-4 px-6 grid grid-cols-3 relative content-center gap-10">
+				<div className="relative content-center my-0 mx-auto max-w-lg py-4 px-6 lg:px-20 grid grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-0 md:gap-10">
 					{coffeeTableProducts.map((coffeeTableProduct, index) => {
 						const { name, price, colorName, colorCode, imageUrl } =
 							coffeeTableProduct;
